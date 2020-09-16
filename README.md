@@ -35,6 +35,18 @@ hash.hex();
 var hash2 = sha256.update('Message to hash');
 hash2.update('Message2 to hash');
 hash2.array();
+
+// HMAC
+sha256.hmac('key', 'Message to hash');
+sha224.hmac('key', 'Message to hash');
+
+var hash = sha256.hmac.create('key');
+hash.update('Message to hash');
+hash.hex();
+
+var hash2 = sha256.hmac.update('key', 'Message to hash');
+hash2.update('Message2 to hash');
+hash2.array();
 ```
 If you use node.js, you should require the module first:
 ```JavaScript
@@ -50,6 +62,10 @@ It supports AMD:
 require(['your/path/sha256.js'], function(sha256) {
 // ...
 });
+```
+or TypeScript
+```TypeScript
+import { sha256, sha224 } from 'js-sha256';
 ```
 ## Example
 ```JavaScript

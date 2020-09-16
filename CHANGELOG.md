@@ -1,5 +1,38 @@
 # Change Log
 
+## v0.9.0 / 2017-12-18
+### Fixed
+- incorrect result when first bit is 1 of bytes.
+
+### Changed
+- throw error by Error oject. #13
+
+### Added
+- TypeScript interfaces. #12
+
+## v0.8.0 / 2017-11-19
+### Added
+- support for web worker.
+- typescript types. #10
+
+### Changed
+- prevent webpack to require dependencies.
+
+## v0.7.1 / 2017-10-31
+### Improved
+- performance of hBytes increment.
+
+## v0.7.0 / 2017-10-31
+### Fixed
+- incorrect result when file size >= 512M.
+
+## v0.6.0 / 2017-07-11
+### Added
+- HMAC feature.
+
+### Changed
+- throw error if input type is incorrect.
+
 ## v0.5.0 / 2017-01-24
 ### Added
 - Streaming support #6
